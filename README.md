@@ -21,3 +21,7 @@ All services are containerized using **Docker Compose** and use **in-memory stor
 
 ## 🧱 Architecture
 
+[Product Service] <---- [Order Service] <---- [Payment Service]
+| | |
+port:8001 port:8002 port:8003
+
