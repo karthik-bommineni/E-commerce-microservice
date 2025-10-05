@@ -25,3 +25,16 @@ All services are containerized using **Docker Compose** and use **in-memory stor
 | | |
 port:8001 port:8002 port:8003
 
+
+- **Order Service** calls **Product Service** to validate product details and stock before creating an order.
+- **Payment Service** calls **Order Service** to verify total amount before processing payment.
+
+---
+
+## 🐳 Getting Started
+
+### 1️⃣ Clone the repository
+
+```bash
+git clone https://github.com/<YOUR_USERNAME>/ecommerce-microservices.git
+cd ecommerce-microservices
